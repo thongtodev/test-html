@@ -1,13 +1,8 @@
-let arr = [9,2,2,6,5,3];
-let count = 0;
-let sum = 0;
-for(let i = 0; i < arr.length; i++)
-{
-    if(arr[i] %2 == 0)
-    {
-        count++;
-        sum += arr[i];
-    }
+let n = 54321;
+let x = 0;
+
+while (n > 0) {
+    x += (n % 10);
+    n = Math.floor(n/10);
 }
-let avg = sum / count;
-console.log(`Trung binh cac so chan: ${avg}`);
+console.log(`Tong cac chu so trong n:  ${x}`);
