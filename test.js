@@ -1,8 +1,14 @@
-let n = 54321;
-let x = 0;
-
-while (n > 0) {
-    x += (n % 10);
-    n = Math.floor(n/10);
+let a = 29;
+let b = 92;
+function check(a,b)
+{
+  if(a > b)
+  {
+    console.log(`Gia tri cua a lon hon b ${a > b}`);
+  }
+  else
+  {
+    console.log(`Gia tri cua a nho hon b ${a < b}`);
+  }
 }
-console.log(`Tong cac chu so trong n:  ${x}`);
+check(a,b);
