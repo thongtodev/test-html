@@ -1,13 +1,15 @@
-let a = 92;
-let b = 29;
-let check = (a,b) => {
-    if(a > b)
-        {
-          console.log(`Gia tri cua a lon hon b ${a > b}`);
-        }
-        else
-        {
-          console.log(`Gia tri cua a nho hon b ${a < b}`);
-        }
-}
-check(a,b);
+let arr = [
+  {name:'Geats', age:1000},
+  {name: 'Buffa', age:24},
+  {name: 'Nago', age:18}
+]
+
+let filter = arr.filter((item, index) => {
+  return item && item.age === 1000;
+});
+
+let find = arr.find((item, index) => {
+  return item && item.age === 24;
+});
+console.log(`found`, find);
+console.log(`found`,filter);
