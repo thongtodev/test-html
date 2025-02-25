@@ -1,17 +1,11 @@
-let arr = [
-  {name:'Geats', age:1000},
-  {name: 'Buffa', age:24},
-  {name: 'Nago', age:18}
-]
-
-let map = arr.map((item, index) => {
-  console.log(`${item.name} age is ${item.age}`);
+var arr =[
+  {name:'Geats',power:10000},
+  {name:'Buffa',power:8000},
+  {name:'Nago',power:6000},
+  {name:'Tycoon',power:1000}
+];
+arr.sort(function(a, b) {
+  return b.power - a.power;
 })
 
-let arrNum = [1, 2, 3, 4, 5, 6, 7, 8, 9];
-let mapNum = arrNum.map((item, index) => {
-  item = item * item;
-  return item;
-})
-console.log(`check value arr: ${arrNum}`);
-console.log(`check value mapNum:`, mapNum);
+console.log(`check power after sort:`,arr);
